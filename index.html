@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一二与布布 · 四系三章 PC 横屏 WebGL 版 v2</title>
+  <link rel="stylesheet" href="./src/ui/styles.css" />
+</head>
+<body>
+  <div id="game-shell">
+    <div id="viewport-16-9">
+      <!-- WebGL Stage Layer (Persistent PixiJS v8 Canvas) -->
+      <div id="stage-host"></div>
+
+      <!-- Targeting Bezier Arrow SVG Layer -->
+      <svg id="drag-arrow-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <marker id="arrow-head" viewBox="0 0 14 14" refX="10" refY="7" markerWidth="10" markerHeight="10" orient="auto">
+            <path d="M 0 1 L 13 7 L 0 13 z" fill="#f87171"></path>
+          </marker>
+        </defs>
+        <path id="drag-arrow-path" d="" fill="none" stroke="#f87171" stroke-width="7" stroke-dasharray="16 10" stroke-linecap="round" marker-end="url(#arrow-head)"></path>
+      </svg>
+
+      <!-- HTML/CSS Interactive UI Overlay -->
+      <div id="ui-root"></div>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

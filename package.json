@@ -1,0 +1,20 @@
+{
+  "name": "yier-bubu-webgl-v2",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "一二与布布 · 四系三章 PC 横屏 WebGL 完整迁移版 (Vite + PixiJS v8)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:core": "node scripts/test-core.mjs",
+    "sim": "node scripts/simulate-balance.mjs"
+  },
+  "dependencies": {
+    "pixi.js": "^8.6.6"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
